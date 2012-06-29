@@ -10,9 +10,6 @@ I created this as an experiment during Sailthru Hackathon for writing plugin for
 ``` xml
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-
-    <property name="LOG_DIRECTORY" value="/tmp" />
-
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <!-- encoders are assigned the type
      ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
@@ -38,4 +35,4 @@ I created this as an experiment during Sailthru Hackathon for writing plugin for
 </configuration>
 ```
 
-But seriously, why do you want to use MongoDB for storing logs? You should probably use systems like [Scribe](https://github.com/facebook/scribe) or Syslog or [Graylog](http://graylog2.org/) or any other systems except MongoDB.
+But seriously, why do you want to use MongoDB for storing logs? You should probably use systems like [Scribe](https://github.com/facebook/scribe) or [Syslog](http://www.syslog.org/) or [Graylog](http://graylog2.org/) or any other systems except MongoDB.
