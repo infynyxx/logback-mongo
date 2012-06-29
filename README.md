@@ -3,6 +3,8 @@ logback-mongo
 
 Simple Logback plugin to send data to MongoDB
 
+I created this as an experiment during Sailthru Hackathon for writing plugin for [logback](http://logback.qos.ch/) which is pretty awesome logging framework for Java.
+
 ### Using with logback.xml
 
 ``` xml
@@ -35,3 +37,5 @@ Simple Logback plugin to send data to MongoDB
     </root>
 </configuration>
 ```
+
+But seriously, why do you want to use MongoDB for storing logs? You should probably use systems like [Scribe](https://github.com/facebook/scribe) or Syslog or [Graylog](http://graylog2.org/) or any other systems except MongoDB.
